@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif; /* Font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f5f5f5; /* Light background color */
+}
+
+/* Header styles */
+.header-main {
+    background-color: #b4e9d7; /* Soft green background color */
+    padding: 10px 0; /* Padding for spacing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow for depth */
+}
+
+/* Navigation styles */
+.header-nav {
+    display: flex; /* Flexbox layout for navigation items */
+    justify-content: left; /* Center navigation items */
+    gap: 20px; /* Gap between navigation items */
+}
+.header-list{
+    display: flex;
+}
+.header-l{
+    display: flex;
+}
+.header-nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Dark text color */
+    padding: 8px 12px; /* Padding around links */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Transition for hover effects */
+}
+
+.header-nav a:hover {
+    background-color: #4caf50; /* Green background on hover */
+    color: #fff; /* White text color on hover */
+}
+
+/* Main content styles */
+main {
+    padding: 20px; /* Padding around main content */
+}
+
+main h1 {
+    font-size: 2rem; /* Large font size for heading */
+    color: #333; /* Dark text color */
+    margin-bottom: 10px; /* Margin below heading */
+}
+
+main p {
+    font-size: 1rem; /* Normal font size for paragraph */
+    color: #666; /* Dark gray text color */
+}
+
+</style>
+<body>
+    <header class = "header-main">
+        <nav class = "header-nav">
+            <ul class = " header-list">
+                <li class = "header-l"> <a href = "/"> Shop </a></li>
+                <li class = "header-l"> <a href = "/admin/add-product">Add product </a></li>
+                <li class = "header-l"> <a href = "/contactus">Contact US </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1> My products</h1>
+        <p> List of all products..</p>
+        
+    </main>
+</body>
+</html>

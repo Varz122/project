@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.body {
+    font-family: Arial, sans-serif; /* Font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f5f5f5; /* Light background color */
+}
+
+/* Header styles */
+.header-main {
+    background-color: #b4e9d7; /* Soft green background color */
+    padding: 10px 0; /* Padding for spacing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow for depth */
+}
+
+/* Navigation styles */
+.header-nav {
+    display: flex; /* Flexbox layout for navigation items */
+    justify-content: left; /* Center navigation items */
+    gap: 20px; /* Gap between navigation items */
+}
+
+.header-list {
+    display: flex; /* Enable Flexbox for list items */
+    margin: 0px;; /* Remove default margin */
+    padding: 10px; /* Remove default padding */
+    list-style-type: none; /* Remove default list bullets */
+}
+
+.header-l {
+    display: flex; /* Enable Flexbox for list items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.header-nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Dark text color */
+    padding: 8px 12px; /* Padding around links */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Transition for hover effects */
+}
+
+.header-nav a:hover {
+    background-color: #4caf50; /* Green background on hover */
+    color: #fff; /* White text color on hover */
+}
+
+/* Form styling */
+form {
+    background-color: #ffffff; /* White background for form */
+    padding: 20px; /* Padding around form elements */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow for depth */
+    margin: 20px auto; /* Center form horizontally */
+    max-width: 400px; /* Max width for form */
+}
+
+form label {
+    display: block; /* Display label as block */
+    margin-bottom: 5px; /* Space below label */
+    color: #333; /* Dark text color */
+}
+
+form input, form textarea, form select {
+    width: 100%; /* Full width */
+    padding: 8px; /* Padding for comfortable typing */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    margin-bottom: 10px; /* Margin below each input */
+}
+
+form button {
+    background-color: #4caf50; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding for button */
+    border-color: black; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+form button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+</style>
+<body>
+    <header class = "header-main">
+        <nav class = "header-nav">
+            <ul class = " header-list">
+                <li class = "header-l"> <a href = "/"> Shop </a></li>
+                <li class = "header-l"> <a href = "/admin/add-product">Add product </a></li>
+                <li class = "header-l"> <a href = "/contactus">Contact US </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action = "/admin/product" method = "POST">
+            <input type = "text" name = "title">
+            <button type = "submit"> Add </button>
+        </form>
+    </main>
+</body>
+</html>
